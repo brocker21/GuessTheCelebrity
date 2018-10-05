@@ -15,7 +15,9 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonAnswer3" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonAnswer3"
+        android:tag="3"
+        android:onClick="checkAnswer"/>
 
     <Button
         android:id="@+id/buttonAnswer3"
@@ -26,7 +28,9 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonAnswer2" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonAnswer2"
+        android:tag="2"
+        android:onClick="checkAnswer"/>
 
     <Button
         android:id="@+id/buttonAnswer2"
@@ -37,7 +41,9 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonAnswer1" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonAnswer1"
+        android:tag="1"
+        android:onClick="checkAnswer"/>
 
     <Button
         android:id="@+id/buttonAnswer1"
@@ -46,10 +52,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:onClick="downloadImage"
+        android:onClick="checkAnswer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewCelebrity" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCelebrity"
+        android:tag="0"/>
 
     <ImageView
         android:id="@+id/imageViewCelebrity"
